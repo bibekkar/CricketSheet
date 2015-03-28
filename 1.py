@@ -68,4 +68,6 @@ rows = db.fetchall()
 for r in rows:
 	print(r)
 
+
+
 conn.close()
