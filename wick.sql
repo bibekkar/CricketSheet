@@ -1,0 +1,1 @@
+SELECT player, kind, c, SUM(c) FROM (SELECT player, kind, COUNT(kind) AS c FROM wickets GROUP BY player, kind) GROUP BY player, kind

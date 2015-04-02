@@ -1,0 +1,1 @@
+SELECT batsman, COUNT(*) FROM (SELECT batsman, runs FROM (SELECT matchID, batsman, SUM(runs) AS runs FROM balls GROUP BY matchID, batsman) WHERE runs>=50 and runs<100) GROUP BY batsman ORDER BY COUNT(*) DESC

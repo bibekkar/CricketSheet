@@ -1,0 +1,1 @@
+SELECT player, kind, COUNT(kind) FROM wickets GROUP BY player, kind ORDER BY COUNT(kind) DESC
